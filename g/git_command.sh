@@ -78,6 +78,18 @@ git reset --hard PaseYourCommitNumberHere
 git push --force origin master #master is your branch name here, you need to use your current branch name.
 
 
-
+#git tag
+#show all tag
+git tag
+#create a annoted tag
+git tag -a v1.00 -m 'commment here'
+#create a light weight tag
+git tag v1.0.0-lw
+#push all tag to remote
+git push origin --tags
+#delete a tag from local
+git tag --delete tagname
+#delete a tag from remote
+git push --delete origin tagname
 
 
