@@ -93,3 +93,9 @@ git tag --delete tagname
 git push --delete origin tagname
 
 
+
+copy git reporsitory from other site/repository
+git remote set-url origin  http://address
+example: 
+git remote set-url origin  git@github.com:AhsanRiyad/hrm-babl-arif-vai-server-old.git
+
