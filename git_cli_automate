@@ -1,0 +1,38 @@
+-------------------------------------------------
+install git 
+
+sudo apt update
+sudo apt install git
+git --version
+git config --global user.name "Your Name"
+git config --global user.email "your.email@example.com"
+
+-------------------------------------------------
+install git gh
+
+# Update the package list and install the necessary dependencies
+sudo apt update
+sudo apt install gh
+
+
+auth login -> personal access token will be required, create a classic token
+
+gh auth login
+
+gh repo create my-repo --public --source . --remote <remoteName>
+gh repo create my-repo --public --source . --remote origin
+
+to delete repo
+gh repo delete AhsanRiyad/my-repo
+
+
+gh repo delete username/my-repo --confirm
+
+
+----------------------------------------
+
+add multiple accounts (no ways to add multiple accounts, session must be for the second account)
+
+gh auth login --hostname github.com
+
+
