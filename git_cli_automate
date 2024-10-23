@@ -38,3 +38,25 @@ gh auth login --hostname github.com
 
 gh auth switch --user AhsanRiyad
 
+
+
+
+view users
+gh api repos/DeepchainLabs/mothz-frontend/contributors --jq '.[].login'
+
+send invitation
+gh api -X PUT /repos/DeepchainLabs/mothz-frontend/collaborators/AhsanRiyad -f permission=write
+
+delete invitation
+gh api -X DELETE /repos/DeepchainLabs/mothz-frontend/collaborators/AhsanRiyad
+
+get commits
+gh api repos/DeepchainLabs/mothz-frontend/commits?sha=development --jq '.[] | {id: .sha, message: .commit.message, author: .commit.author.name, date: .commit.committer.date}'
+
+
+create branch
+gh api -X POST repos/DeepchainLabs/mothz-frontend/git/refs -f ref="refs/heads/feature/new-feature" -f sha=$(gh api repos/DeepchainLabs/mothz-frontend/git/ref/heads/development --jq '.object.sha')
+
+delete branch
+gh api -X DELETE repos/DeepchainLabs/mothz-frontend/git/refs/heads/feature/new-feature
+
