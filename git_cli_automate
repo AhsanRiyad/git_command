@@ -36,3 +36,5 @@ add multiple accounts (no ways to add multiple accounts, session must be for the
 gh auth login --hostname github.com
 
 
+gh auth switch --user AhsanRiyad
+
