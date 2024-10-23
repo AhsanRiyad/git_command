@@ -31,7 +31,7 @@ gh repo delete username/my-repo --confirm
 
 ----------------------------------------
 
-add multiple accounts (no ways to add multiple accounts, session must be for the second account)
+add multiple accounts 
 
 gh auth login --hostname github.com
 
