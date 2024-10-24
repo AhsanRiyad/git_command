@@ -60,3 +60,7 @@ gh api -X POST repos/DeepchainLabs/mothz-frontend/git/refs -f ref="refs/heads/fe
 delete branch
 gh api -X DELETE repos/DeepchainLabs/mothz-frontend/git/refs/heads/feature/new-feature
 
+
+set default branch 
+gh repo edit AhsanRiyad/solana-swap-test --default-branch development
+
